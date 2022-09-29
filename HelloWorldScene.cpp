@@ -248,14 +248,10 @@ bool nyoba::init()
 }
 
 bool nyoba::onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event) {
-
     return  true;
 }
-
 void nyoba::onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event) {
-
-
-
+ 
     auto start = Director::getInstance()->convertToGL(touch->getLocationInView());
     auto end = Director::getInstance()->convertToGL(touch->getPreviousLocationInView());
 
@@ -275,11 +271,8 @@ void nyoba::onTouchMoved(cocos2d::Touch* touch, cocos2d::Event* event) {
         _brush->visit();
     }
     _texture->end();
-
 }
-
 void nyoba::onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event) {
-
 }
 
 
